@@ -2,7 +2,7 @@
 #include "user/user.h"
 
 static const int START_NUM = 2;
-static const int END_NUM = 100;
+static const int END_NUM = 35;
 
 void primes(int*);
 
