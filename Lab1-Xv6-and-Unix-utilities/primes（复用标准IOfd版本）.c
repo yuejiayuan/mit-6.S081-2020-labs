@@ -21,7 +21,7 @@ int main(int argc, char* argv[]) {
     // 将标准输出重定向到fd 2（2原本是标准错误输出）
     close(2);
     dup(1); 
-    // 将pipe管道的读写分别重定向到fd 1和2
+    // 将pipe管道的读写分别重定向到fd 0和1
     close(0);
     close(1);
     dup(fd[0]);
